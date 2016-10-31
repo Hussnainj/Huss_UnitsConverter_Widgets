@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.wasim.huss_unitsconverter_widgets.category"
+    tools:showIn="@layout/activity_category"
+    android:background="@color/dim_foreground_material_light"
+    >
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="false">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Unit Converter"
+                android:id="@+id/categoryTitle"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:textColor="#ffffff"
+                />
+
+
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/linearLayout"
+                android:layout_marginTop="20dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="What do you want to Convert ....??"
+                    android:id="@+id/selectDescription"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:layout_marginTop="40dp"
+                    android:textColor="#effbfbfb"
+                    android:textSize="15sp"
+                    android:textStyle="italic"/>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/linearLayout3"
+                android:layout_marginTop="65dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="55dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Select Category"
+                    android:textStyle="bold"
+                    android:id="@+id/typetv"
+                    android:layout_below="@+id/selectDescription"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="38dp"
+                    android:textColor="#ffffff" />
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinner11"
+                    android:layout_weight="0.3"
+                    android:layout_alignBottom="@+id/linearLayout"
+                    android:layout_marginTop="45dp"
+                    android:textAlignment="center"
+                    android:spinnerMode="dropdown"
+                    android:foreground="#ffffff"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/linearLayout4"
+                android:layout_marginTop="125dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="55dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Convert From"
+                    android:textStyle="bold"
+                    android:id="@+id/fromtv"
+                    android:layout_below="@+id/selectDescription"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="38dp"
+                    android:textColor="#FFFFFFFF" />
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinner"
+                    android:layout_weight="0.3"
+                    android:layout_alignBottom="@+id/linearLayout"
+                    android:layout_marginTop="45dp"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/linearLayout5"
+                android:layout_marginTop="180dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="55dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Convert To"
+                    android:textStyle="bold"
+                    android:id="@+id/totv"
+                    android:layout_below="@+id/selectDescription"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="38dp"
+                    android:textColor="#FFFFFFFF" />
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinner1"
+                    android:layout_weight="0.3"
+                    android:layout_alignBottom="@+id/linearLayout"
+                    android:layout_marginTop="45dp"
+                    android:textAlignment="center"
+                    android:foreground="#ffffff" />
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/linearLayout6"
+                android:layout_marginTop="230dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Enter Value"
+                    android:textStyle="bold"
+                    android:id="@+id/valuetv"
+                    android:layout_below="@+id/selectDescription"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="38dp"
+                    android:textColor="#FFFFFFFF" />
+
+
+
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/value"
+                    android:hint="Enter Value"
+                    android:layout_below="@+id/selectDescription"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="39dp"
+                    android:maxLines="1"
+                    android:inputType="numberDecimal"
+                    android:focusable="true"
+                    android:textColor="#15d9ee"
+                    android:textColorHint="#FF70F9DB"
+                    />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/linearLayout7"
+                android:layout_marginTop="25dp"
+                >
+
+
+                <Button
+
+
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/buttonn"
+                    android:layout_below="@+id/selectDescription"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="290dp"
+                    android:text="Result"
+                    android:background="@drawable/custom_button_result"
+                    android:textColor="#100b0b"
+                    android:textStyle="bold"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/linearLayout8"
+                android:layout_marginTop="240dp"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvresult"
+                    android:layout_below="@+id/selectDescription"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="130dp"
+                    android:text="Result"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff" />
+
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
